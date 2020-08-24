@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{04DFCFD1-D55C-4334-AA77-EA1589DDC76D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CakeFuiry1</RootNamespace>
+    <AssemblyName>CakeFuiry1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="unityengine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\unityengine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interface1.cs" />
+    <Compile Include="map.cs" />
+    <Compile Include="pause.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pause.Designer.cs">
+      <DependentUpon>pause.cs</DependentUpon>
+    </Compile>
+    <Compile Include="map1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="map1.Designer.cs">
+      <DependentUpon>map1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="map1.ja.resx">
+      <DependentUpon>map1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="map1.resx">
+      <DependentUpon>map1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pause.resx">
+      <DependentUpon>pause.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="prikolnie_gifki_13.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\airport.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\shkalnik_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\mini_babka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\babka.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\babka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\shkola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\bomj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\babka2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\shkolnik_23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\nachat_igru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\nazad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\nachat_zanovo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\vykhod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\NORMAL_NYJ_NAChAL_NYJ_FON.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\NORMAL_NYJ_NAChAL_NYJ_FON %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\MENYu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\golovababki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\karta_-02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\golovababki1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\golovashkoli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\golovashkoli1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\golovabomj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\golovabomj1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\bonj111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\bashka_bamzha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\BGTU.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\library.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\park.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\sport.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\KONETs.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
